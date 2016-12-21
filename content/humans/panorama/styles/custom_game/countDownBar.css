@@ -1,0 +1,48 @@
+.countDownRoot{
+	height: 500px;
+	width: 300px;
+	flow-children:down;
+	vertical-align: top;
+	horizontal-align:left;
+	margin-top: 120px;
+	margin-left: 10px;
+
+}
+
+.containerPanel{
+	width: 100%;
+	height: 100%;
+	flow-children:down;
+}
+
+.countDownPanel{
+	width: 100%;
+	flow-children:down;
+}
+
+.countDownTitlePanel{
+	height: 40px;
+	width:100%;
+}
+
+.countDownTitle{
+	font-size: 24px;
+	color:#52D9EF;
+	
+}
+
+.countDownBarBg{
+
+	width: 100%;
+	height: 15px;
+	background-color:gray;
+}
+
+.countDownBar{
+	width:100%;
+	height: 100%;
+	background-color: #52D9EF;
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #52D9EF  ), color-stop( 0.4, #144B91 ), to( #42D9E5 ) );	
+	border-radius: 6px;
+}
+

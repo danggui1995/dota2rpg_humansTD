@@ -1,0 +1,43 @@
+"AddonInfo"
+{
+     "maps"                   "humans"
+     "IsPlayable"             "1"
+     "humans"
+     {
+          "MaxPlayers"        "4"
+     }
+     
+     "Default_Keys"
+     {
+          "01"
+          {
+               "Key"          "Space"
+               "Command"      "OpenBaiJia"
+               "Name"         "xiaotou_baijia"
+          }
+          "02"
+          {
+               "Key"          "UPARROW"
+               "Command"      "+CG_1"
+               "Name"         "CG_1"
+          }
+          "03"
+          {
+               "Key"          "RIGHTARROW"
+               "Command"      "+CG_2"
+               "Name"         "CG_2"
+          }
+          "04"
+          {
+               "Key"          "DOWNARROW"
+               "Command"      "+CG_3"
+               "Name"         "CG_3"
+          }
+          "05"
+          {
+               "Key"          "LEFTARROW"
+               "Command"      "+CG_4"
+               "Name"         "CG_4"
+          }
+     }
+}

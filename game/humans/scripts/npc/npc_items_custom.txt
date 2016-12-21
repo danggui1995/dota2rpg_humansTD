@@ -1,0 +1,1225 @@
+"DOTAAbilities"
+{
+	"item_dagger"
+	{
+        "ID"                                        "1000"
+        "BaseClass"                                "item_datadriven"
+        "AbilityBehavior"                "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+        "AbilityTextureName"        		"item_dagger"
+
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+        "precache"
+		{
+			"soundfile"		"soundevents/game_sounds_heroes/game_sounds_antimage.vsndevts"
+		}
+		"AbilityCastPoint"				"0.4"
+		"AbilityCooldown"				"3.0"
+		"AbilityManaCost"				"0"
+        "OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/ability/magical_ability.lua"
+				"Function"		"Blink"
+				"Target"		"POINT"
+			}
+	
+			"FireSound"
+			{
+				"EffectName"	"Hero_Antimage.Blink_out"
+				"Target"		"CASTER"
+			}
+	
+			"FireSound"
+			{
+				"EffectName"	"Hero_Antimage.Blink_in"
+				"Target"		"CASTER"
+			}
+	
+		}
+	}
+	"item_youxia12"
+	{
+        "ID"                                        "1001"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_youxia_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"youxia12"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_youxia13"
+	{
+        "ID"                                        "1002"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_youxia_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"youxia13"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_youxia14"
+	{
+        "ID"                                        "1003"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_youxia_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"youxia14"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_yemanren12"
+	{
+        "ID"                                        "1004"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_yemanren_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"yemanren12"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"700"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_yemanren13"
+	{
+        "ID"                                        "1005"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_yemanren_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"yemanren13"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"700"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_yemanren14"
+	{
+        "ID"                                        "1006"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_yemanren_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"yemanren14"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"700"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_lieren12"
+	{
+        "ID"                                        "1007"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_lieren_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"lieren12"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"600"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_lieren13"
+	{
+        "ID"                                        "1008"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_lieren_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"lieren13"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"600"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_lieren14"
+	{
+        "ID"                                        "1009"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_lieren_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"lieren14"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"600"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_shushi12"
+	{
+        "ID"                                        "1010"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_shushi_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"shushi12"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"600"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_shushi13"
+	{
+        "ID"                                        "1011"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_shushi_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"shushi13"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"600"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_shushi14"
+	{
+        "ID"                                        "1012"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_shushi_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"shushi14"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"600"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+
+	"item_mojianshi12"
+	{
+        "ID"                                        "1013"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_mojianshi_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"mojianshi12"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_mojianshi13"
+	{
+        "ID"                                        "1014"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_mojianshi_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"mojianshi13"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_mojianshi14"
+	{
+        "ID"                                        "1015"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_mojianshi_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"mojianshi14"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"2"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_xiaotou12"
+	{
+        "ID"                                        "1016"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_xiaotou_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"xiaotou12"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_xiaotou13"
+	{
+        "ID"                                        "1017"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_xiaotou_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"xiaotou13"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_xiaotou14"
+	{
+        "ID"                                        "1018"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityTextureName"        		"item_xiaotou_taozhuang"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "1"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "1"
+        "ItemQuality"                        "rare"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+		"AbilityCastPoint"				"0"
+		"Building"						"1" //bool
+		"BuildingSize"					"2"
+		"BuildTime"						"5.0"
+		"AbilityCastRange"				"200"
+		"UpdateHealth"					"1" //bool
+		"UnitName"						"xiaotou14"
+		"Scale"							"0" //bool
+		"PlayerCanControl"				"1"
+		"AbilityCooldown"				"0"
+        "AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"food"					"1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wood"					"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"gold"					"500"
+			}
+		}
+
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"builder.lua"
+				"Function"		"Build"
+			}
+		}
+	}
+	"item_randomgx"
+	{
+        "ID"                                        "1019"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+        "AbilityTextureName"        	"item_randomgx"
+      	"AbilityCooldown"               "300"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "0"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "0"
+        "AbilityManaCost"				"0"
+        "AbilityDuration"				"0"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+        "precache"
+        {
+        	"particle"  "particles/econ/items/earthshaker/earthshaker_totem_ti6/earthshaker_totem_ti6_blur_impact.vpcf"
+
+        }
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/item/heroitem.lua"
+				"Function"		"OnRandomGx"
+				"Target"		"TARGET"
+				"particleName"	"particles/econ/items/earthshaker/earthshaker_totem_ti6/earthshaker_totem_ti6_blur_impact.vpcf"
+			}
+		}
+	}
+
+	"item_chuancishu1"
+	{
+        "ID"                                        "1020"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		
+        "AbilityTextureName"        	"item_chuancishu1"
+      	"AbilityCastRange"				"%radius"
+
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "0"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "0"
+
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+        "precache"
+        {
+        	"particle"  "particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok_arc.vpcf"
+        	"particle"		"particles/econ/generic/generic_buff_1/generic_buff_1.vpcf"
+        }
+        "AbilitySpecial"
+        {
+        	"01"
+        	{
+        		"var_type"			"FIELD_INTEGER"
+        		"radius"			"300"
+        	}
+        }
+		"Modifiers"
+		{
+			"modifier_chuancishu1_caster"
+			{
+				"Passive"			"1"
+				"IsHidden"			"1"
+		
+				"Aura"          	"modifier_chuancishu1_buff"
+				"Aura_Radius"   	"%radius"
+				"Aura_Teams"    	"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+				"Aura_Types"    	"DOTA_UNIT_TARGET_BASIC" 
+
+				//"EffectName"        ""
+				//"EffectAttachType"	"follow_origin"
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/econ/items/bloodseeker/bloodseeker_eztzhok_weapon/bloodseeker_bloodrage_ground_eztzhok_arc.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "CASTER"
+						"ControlPoints"
+						{
+							"03"	"CASTER"
+							
+						}
+					}
+				}
+			}
+	
+			"modifier_chuancishu1_buff"
+			{
+				"OnCreated"
+				{
+					"AttachEffect"
+					{
+						"EffectName"        "particles/econ/generic/generic_buff_1/generic_buff_1.vpcf"
+						"EffectAttachType"  "follow_origin"
+						"Target"            "TARGET"
+						"ControlPoints"
+						{
+							"00"	"TARGET"
+						}
+					}
+				}
+			
+			}
+		}
+	}
+
+
+
+	"item_murenzhuang"
+	{
+        "ID"                                        "1021"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+        "AbilityTextureName"        	"item_murenzhuang"
+      	"AbilityCooldown"               "10"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "0"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "0"
+        "AbilityManaCost"				"0"
+        "AbilityDuration"				"10"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+        "AbilitySpecial"
+        {
+        	"01"
+        	{
+        		"var_type"			"FIELD_INTEGER"
+        		"duration"			"10"
+        	}
+        	
+        }
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/item/heroitem.lua"
+				"Function"		"OnMRZ"
+				"Target"			"POINT"
+				"duration"			"%duration"
+			}
+			
+		}
+	}
+
+	"item_xianjing1"
+	{
+        "ID"                                        "1022"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+        "AbilityTextureName"        	"item_xianjing1"
+      	"AbilityCooldown"               "180"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "0"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "0"
+        "AbilityManaCost"				"0"
+        "AbilityDuration"				"10"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+        "AbilitySpecial"
+        {
+        	"01"
+        	{
+        		"var_type"			"FIELD_INTEGER"
+        		"duration"			"40"
+        	}
+        	
+        }
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/item/heroitem.lua"
+				"Function"		"OnXianJing"
+				"Target"			"POINT"
+				"duration"			"%duration"
+			}
+			
+		}
+	}
+
+	"item_fanbei"
+	{
+        "ID"                                        "1023"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		
+        "AbilityTextureName"        	"item_fanbei"
+      
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "0"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "0"
+
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+        "precache"
+        {
+        	"particle"  "particles/econ/items/antimage/antimage_weapon_basher_ti5_gold/antimage_manavoid_ti_5_gold.vpcf"
+        	"particle"	"particles/econ/items/slardar/slardar_takoyaki_gold/slardar_crush_tako_ground_dust_pyro_gold.vpcf"
+        }
+        "OnSpellStart"
+        {
+        	"RunScript"
+        	{
+        		"ScriptFile"	"scripts/vscripts/item/heroitem.lua"
+        		"Function"		"OnDuBo"
+        		"particleName"	"particles/econ/items/antimage/antimage_weapon_basher_ti5_gold/antimage_manavoid_ti_5_gold.vpcf"
+        		"failName"		"particles/econ/items/slardar/slardar_takoyaki_gold/slardar_crush_tako_ground_dust_pyro_gold.vpcf"
+        	}
+        }
+	}
+	"item_xiaojinghua"
+	{
+        "ID"                                        "1024"
+        "BaseClass"                                "item_datadriven"
+       	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC"
+        "AbilityTextureName"        	"item_xiaojinghua"
+      	"AbilityCooldown"               "60"
+        "ItemCost"                                "0"
+        "ItemDroppable"                        "0"
+        "ItemSellable"                        "0"
+        "ItemPurchasable"                "0"
+        "ItemKillable"                        "0"
+        "AbilityManaCost"				"0"
+        "AbilityDuration"				"0"
+        "ItemShareability"                "ITEM_FULLY_SHAREABLE"
+        "precache"
+        {
+        	"particle"  "particles/items_fx/arcane_boots.vpcf"
+
+        }
+		"OnSpellStart"
+		{
+			"RunScript"
+			{
+				"ScriptFile"	"scripts/vscripts/item/heroitem.lua"
+				"Function"		"OnXiaoJH"
+				"Target"		"TARGET"
+			}
+			"AttachEffect"
+			{
+				"EffectName"        "particles/items_fx/arcane_boots.vpcf"
+				"EffectAttachType"  "follow_origin"
+				"Target"            "TARGET"
+			}
+		}
+	}
+}

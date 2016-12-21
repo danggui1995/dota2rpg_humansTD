@@ -1,0 +1,23 @@
+<root>
+  <styles>
+    <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+    <include src="file://{resources}/styles/custom_game/ltx_hud_notification.css" />
+  </styles>
+  <scripts>
+    <include src="file://{resources}/scripts/custom_game/ltx_hud_notification.js" /> 
+  </scripts>
+  <Panel hittest="false" class="BarebonesBaseHud">
+    <Panel hittest="false" class="BarebonesTopNotifications">
+      <Panel hittest="false" id="TopNotifications">
+      </Panel>
+    </Panel>
+    <Panel hittest="false" class="MyMidLeftNotifications">
+      <Panel hittest="false" id="MidLeftNotifications">
+      </Panel>
+    </Panel>
+    <Panel hittest="false" class="BarebonesBottomNotifications">
+      <Panel hittest="false" id="BottomNotifications">
+      </Panel>
+    </Panel>
+  </Panel>
+</root>

@@ -1,0 +1,40 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/diff.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/diff.js" />
+	</scripts>
+	<Panel class="diffRoot" hittest="false">
+		<Panel id="haha">
+			<Label class="myfont" text-align="center" text= "#diff" /> 
+			<Button class= "btn_diff" onactivate="diffSelect(1)">
+				<Label class="myfont" text-align="center" text= "#diff1" /> 
+			</Button>
+			<Button class= "btn_diff" onactivate="diffSelect(2)">
+				<Label class="myfont" text-align="center" text= "#diff2" /> 
+			</Button>
+			<Button class= "btn_diff" onactivate="diffSelect(3)">
+				<Label class="myfont" text-align="center" text= "#diff3" /> 
+			</Button>
+			<Button class= "btn_diff" onactivate="diffSelect(4)">
+				<Label class="myfont" text-align="center" text= "#diff4" /> 
+			</Button>
+			<Button class= "btn_diff" onactivate="diffSelect(5)">
+				<Label class="myfont" text-align="center" text= "#diff5" /> 
+			</Button>
+			<Button class= "btn_diff" onactivate="diffSelect(6)">
+				<Label class="myfont" text-align="center" text= "#diff6" /> 
+			</Button>
+			<Button class= "btn_diff" onactivate="diffSelect(7)">
+				<Label class="myfont" text-align="center" text= "#diff7" /> 
+			</Button>
+			<Button class= "btn_diff" onactivate="diffSelect(8)">
+				<Label class="myfont" text-align="center" text= "#diff8" /> 
+			</Button>
+		</Panel>
+	</Panel>
+</root>
+
+

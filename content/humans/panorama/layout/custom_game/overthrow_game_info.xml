@@ -1,0 +1,54 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/overthrow_game_info.css" />
+		<include src="file://{resources}/styles/custom_game/resource.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/keyReg.js" />
+	</scripts>
+	<Panel class="OverthrowGameInfo">
+		<Panel id="Title">
+			<Label id="TitleName" text="#addon_game_name" />
+		</Panel>
+		
+		<Panel class="resourceRoot" hittest="false">
+			<Panel id="main">
+				<Panel class="res">
+					<Panel id="wood"><Label class="myfont" id="resource_wood1" text= "#wood" /><Label class="myfont" id= "resource_wood2" text= "0" /></Panel>
+					<Panel id="food"><Label class="myfont" id="resource_food1" text= "#food" /><Label class="myfont" id= "resource_food2" text= "0" /></Panel>
+					<Panel id="life"><Label class="myfont" id="resource_food1" text= "#sy_life" /><Label class="myfont" id= "resource_life" text= "50" /></Panel>
+				</Panel>
+				<Panel class="kill_num">
+					<Panel class="haha" id="pl1"><Label class="head" text="#name"></Label>
+						<Label class="head" text="#kill"></Label>
+						<Label class="head" text="#jiaoyi"></Label>
+					</Panel>
+					<Panel class="haha"><Label class="name" id="name1"></Label>
+						<Label class="kill" id="kill1" text="0"></Label>
+						<Button class="btn_gold" id= "btn_gold1" onactivate="AddGold(1)"><Label class="myfont" text= "+10" /> </Button>
+					</Panel>
+					<Panel class="haha" id="pl2"><Label class="name" id="name2" text="#noplayer"></Label>
+						<Label class="kill" id="kill2" text="0"></Label>
+						<Button class="btn_gold" id= "btn_gold2" onactivate="AddGold(2)"><Label class="myfont" text= "+10" /> </Button>
+					</Panel>
+					<Panel class="haha" id="pl3"><Label class="name" id="name3" text="#noplayer"></Label>
+						<Label class="kill" id="kill3" text="0"></Label>
+						<Button class="btn_gold" id= "btn_gold3" onactivate="AddGold(3)"><Label class="myfont" text= "+10" /> </Button>
+					</Panel>
+					<Panel class="haha" id="pl4"><Label class="name" id="name4" text="#noplayer"></Label>
+						<Label class="kill" id="kill4" text="0"></Label>
+						<Button class="btn_gold" id= "btn_gold4" onactivate="AddGold(4)"><Label class="myfont" text= "+10" /> </Button>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="TipsRow" class="InfoRow">
+			<Label id="TipText01" class="TipText" html="true" text="#game_info_tip01" />
+			<Label id="TipText02" class="TipText" html="true" text="#game_info_tip02" />
+			<Label id="TipText03" class="TipText" html="true" text="#game_info_tip03" />
+			<Label id="TipText04" class="TipText" html="true" text="#game_info_tip04" />
+		</Panel>
+	</Panel>
+</root>
+

@@ -1,0 +1,297 @@
+// Dota Heroes File
+// NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
+// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
+"DOTAHeroes"
+{
+	//=================================================================================================================
+	// HERO: Templar Assassin
+	//=================================================================================================================
+	"npc_dota_hero_nevermore"
+	{
+		"override_hero"				"npc_dota_hero_nevermore"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"522"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"100"
+		"AbilityLayout"				"6"
+		"Ability1"					"uppage"	
+		"Ability2"					"youxia_tower1"	
+		"Ability3"					"youxia_tower2"	
+		"Ability4"					"youxia_tower3"	
+		"Ability5"					"youxia_tower4"	
+		"Ability6"					"downpage"		
+		"Ability7"					""
+		"Ability8"					""
+		"Ability9"					""
+		"Ability10"					""
+		"Ability11"					""
+		"Ability12"					""
+		"Ability13"					""
+		"Ability14"					""
+		"Ability15"					""
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"100"		// Damage range min.
+		"AttackDamageMax"			"106"		// Damage range max.
+		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"200"		// Range within a target can be acquired.
+		"AttackRange"				"200"		// Range within a target can be attacked.
+		"ProjectileModel"			""
+		"ProjectileSpeed"			""		// Speed of projectile.		     
+		"StatusHealth"				"50"	
+		"StatusHealthRegen"			"0"			
+		"StatusMana"				"0"	
+		"MovementTurnRate"			"20"
+	
+		"ArmorPhysical"				"0"			
+		"MagicalResistance"			"0"			
+	
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"0"			
+		"AttributeStrengthGain"		"0"			
+		"AttributeBaseIntelligence"	"0"			
+		"AttributeIntelligenceGain"	"0"			
+		"AttributeBaseAgility"		"0"			
+		"AttributeAgilityGain"		"0"
+	}
+	"npc_dota_hero_wisp"
+	{
+		"override_hero"				"npc_dota_hero_wisp"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"522"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"100"
+		"AbilityLayout"				"6"
+		"Ability1"					"uppage"	
+		"Ability2"					"mojianshi_tower1"	
+		"Ability3"					"mojianshi_tower2"	
+		"Ability4"					"mojianshi_tower3"	
+		"Ability5"					"mojianshi_tower4"	
+		"Ability6"					"downpage"		
+		"Ability7"					""
+		"Ability8"					""
+		"Ability9"					""
+		"Ability10"					""
+		"Ability11"					""
+		"Ability12"					""
+		"Ability13"					""
+		"Ability14"					""
+		"Ability15"					""
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"100"		// Damage range min.
+		"AttackDamageMax"			"106"		// Damage range max.
+		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"200"		// Range within a target can be acquired.
+		"AttackRange"				"200"		// Range within a target can be attacked.
+		"ProjectileModel"			""
+		"ProjectileSpeed"			""		// Speed of projectile.		     
+		"StatusHealth"				"50"	
+		"StatusHealthRegen"			"0"			
+		"StatusMana"				"0"	
+		"MovementTurnRate"			"20"
+	
+		"ArmorPhysical"				"0"			
+		"MagicalResistance"			"0"			
+	
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"0"			
+		"AttributeStrengthGain"		"0"			
+		"AttributeBaseIntelligence"	"0"			
+		"AttributeIntelligenceGain"	"0"			
+		"AttributeBaseAgility"		"0"			
+		"AttributeAgilityGain"		"0"
+	}
+	"npc_dota_hero_doom_bringer"
+	{
+		"override_hero"				"npc_dota_hero_doom_bringer"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"522"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"100"
+		"AbilityLayout"				"6"
+		"Ability1"					"uppage"	
+		"Ability2"					"yemanren_tower1"	
+		"Ability3"					"yemanren_tower2"	
+		"Ability4"					"yemanren_tower3"	
+		"Ability5"					"yemanren_tower4"	
+		"Ability6"					"downpage"		
+		"Ability7"					""
+		"Ability8"					""
+		"Ability9"					""
+		"Ability10"					""
+		"Ability11"					""
+		"Ability12"					""
+		"Ability13"					""
+		"Ability14"					""
+		"Ability15"					""
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"100"		// Damage range min.
+		"AttackDamageMax"			"106"		// Damage range max.
+		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"200"		// Range within a target can be acquired.
+		"AttackRange"				"200"		// Range within a target can be attacked.
+		"ProjectileModel"			""
+		"ProjectileSpeed"			""		// Speed of projectile.		     
+		"StatusHealth"				"50"	
+		"StatusHealthRegen"			"0"			
+		"StatusMana"				"0"	
+		"MovementTurnRate"			"20"
+	
+		"ArmorPhysical"				"0"			
+		"MagicalResistance"			"0"			
+	
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"0"			
+		"AttributeStrengthGain"		"0"			
+		"AttributeBaseIntelligence"	"0"			
+		"AttributeIntelligenceGain"	"0"			
+		"AttributeBaseAgility"		"0"			
+		"AttributeAgilityGain"		"0"
+	}
+	"npc_dota_hero_rubick"
+	{
+		"override_hero"				"npc_dota_hero_rubick"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"522"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"100"
+		"AbilityLayout"				"6"
+		"Ability1"					"uppage"	
+		"Ability2"					"xiaotou_tower1"	
+		"Ability3"					"xiaotou_tower2"	
+		"Ability4"					"xiaotou_tower3"	
+		"Ability5"					"xiaotou_tower4"	
+		"Ability6"					"downpage"		
+		"Ability7"					""
+		"Ability8"					""
+		"Ability9"					""
+		"Ability10"					""
+		"Ability11"					""
+		"Ability12"					""
+		"Ability13"					""
+		"Ability14"					""
+		"Ability15"					""
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"100"		// Damage range min.
+		"AttackDamageMax"			"106"		// Damage range max.
+		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"200"		// Range within a target can be acquired.
+		"AttackRange"				"200"		// Range within a target can be attacked.
+		"ProjectileModel"			""
+		"ProjectileSpeed"			""		// Speed of projectile.		     
+		"StatusHealth"				"50"	
+		"StatusHealthRegen"			"0"			
+		"StatusMana"				"0"	
+		"MovementTurnRate"			"20"
+	
+		"ArmorPhysical"				"0"			
+		"MagicalResistance"			"0"			
+	
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"0"			
+		"AttributeStrengthGain"		"0"			
+		"AttributeBaseIntelligence"	"0"			
+		"AttributeIntelligenceGain"	"0"			
+		"AttributeBaseAgility"		"0"			
+		"AttributeAgilityGain"		"0"
+	}
+	"npc_dota_hero_beastmaster"
+	{
+		"override_hero"				"npc_dota_hero_beastmaster"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"522"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"100"
+		"AbilityLayout"				"6"
+		"Ability1"					"uppage"	
+		"Ability2"					"lieren_tower1"	
+		"Ability3"					"lieren_tower2"	
+		"Ability4"					"lieren_tower3"	
+		"Ability5"					"lieren_tower4"	
+		"Ability6"					"downpage"		
+		"Ability7"					""
+		"Ability8"					""
+		"Ability9"					""
+		"Ability10"					""
+		"Ability11"					""
+		"Ability12"					""
+		"Ability13"					""
+		"Ability14"					""
+		"Ability15"					""
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"100"		// Damage range min.
+		"AttackDamageMax"			"106"		// Damage range max.
+		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"200"		// Range within a target can be acquired.
+		"AttackRange"				"200"		// Range within a target can be attacked.
+		"ProjectileModel"			""
+		"ProjectileSpeed"			""		// Speed of projectile.		     
+		"StatusHealth"				"50"	
+		"StatusHealthRegen"			"0"			
+		"StatusMana"				"0"	
+		"MovementTurnRate"			"20"
+
+		"ArmorPhysical"				"0"			
+		"MagicalResistance"			"0"			
+	
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"0"			
+		"AttributeStrengthGain"		"0"			
+		"AttributeBaseIntelligence"	"0"			
+		"AttributeIntelligenceGain"	"0"			
+		"AttributeBaseAgility"		"0"			
+		"AttributeAgilityGain"		"0"
+	}
+	"npc_dota_hero_puck"
+	{
+		"override_hero"				"npc_dota_hero_puck"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"522"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"100"
+		"AbilityLayout"				"6"
+		"Ability1"					"uppage"	
+		"Ability2"					"shushi_tower1"	
+		"Ability3"					"shushi_tower2"	
+		"Ability4"					"shushi_tower3"	
+		"Ability5"					"shushi_tower4"	
+		"Ability6"					"downpage"		
+		"Ability7"					""
+		"Ability8"					""
+		"Ability9"					""
+		"Ability10"					""
+		"Ability11"					""
+		"Ability12"					""
+		"Ability13"					""
+		"Ability14"					""
+		"Ability15"					""
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"100"		// Damage range min.
+		"AttackDamageMax"			"106"		// Damage range max.
+		"AttackRate"				"1.6"		// Speed of attack.
+		"AttackAnimationPoint"		"0.4"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"200"		// Range within a target can be acquired.
+		"AttackRange"				"200"		// Range within a target can be attacked.
+		"ProjectileModel"			""
+		"ProjectileSpeed"			""		// Speed of projectile.		     
+		"StatusHealth"				"50"	
+		"StatusHealthRegen"			"0"			
+		"StatusMana"				"0"	
+		"MovementTurnRate"			"20"
+
+		"ArmorPhysical"				"0"			
+		"MagicalResistance"			"0"			
+	
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"0"			
+		"AttributeStrengthGain"		"0"			
+		"AttributeBaseIntelligence"	"0"			
+		"AttributeIntelligenceGain"	"0"			
+		"AttributeBaseAgility"		"0"			
+		"AttributeAgilityGain"		"0"
+	}
+}

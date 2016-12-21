@@ -1,0 +1,17 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/resource.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/resource.js" />
+	</scripts>
+	<Panel class="resourceRoot2" hittest="false">
+		<Panel class="res_row_gold">
+			<Image id="gold_img" src="file://{images}/custom_game/GoldIcon.png" hittest="false"/>
+			<Label id="gold_label" text="0" hittest="false"/>
+		</Panel>
+	</Panel>
+</root>
+
+

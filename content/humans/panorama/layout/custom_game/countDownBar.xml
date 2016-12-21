@@ -1,0 +1,14 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/countDownBar.css"/>
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/countDownBar.js"/>
+	</scripts>
+	<Panel hittest="false">
+		<Panel id="countDownRoot" class="countDownRoot" hittest="false">
+			<Panel id="containerPanel" class="containerPanel" hittest="false">
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

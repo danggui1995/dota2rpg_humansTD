@@ -1,0 +1,11 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/custom_game/custom_loading_screen.css"/>
+	</styles>
+	<Panel>
+		<Image id="ltx" class="imageSize" src="file://{images}/custom_game/ltx.png"/>
+		<Panel id="attention">
+			<Label id="attention_text" text="#map_attention"/>
+		</Panel>
+	</Panel>
+</root>
